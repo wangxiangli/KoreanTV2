@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pullToRefreshScrollViewMovie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- 最新电影-->
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新电影"
+            android:textSize="20sp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <!-- 青春偶像-->
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/textViewIdol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="青春偶像"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/textViewIdolMore"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看更多"
+            android:textColor="#aa0000"
+            android:textSize="15sp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/textViewIdol"
+            android:id="@+id/recyclerViewIdol"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+        <!-- 标签-->
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标签选剧"
+                android:textSize="20sp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewMovielabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+        <!-- 爱情进阶-->
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/textViewLove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="爱情进阶"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textViewLoveMore"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看更多"
+                android:textColor="#aa0000"
+                android:textSize="15sp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/textViewLove"
+                android:id="@+id/recyclerViewLove"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+        <!-- 催泪大片-->
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/textViewLacrimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="催泪大片"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textViewLacrimationMore"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看更多"
+                android:textColor="#aa0000"
+                android:textSize="15sp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/textViewLacrimation"
+                android:id="@+id/recyclerViewLacrimation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+        <!-- 高分电影-->
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/textViewHigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高分大片"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textViewHighMore"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看更多"
+                android:textColor="#aa0000"
+                android:textSize="15sp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/textViewHigh"
+                android:id="@+id/recyclerViewHigh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </LinearLayout>
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_home"
+        app:logo="@mipmap/logo"
+        android:layout_width="match_parent"
+        app:title=" "
+        android:background="#F6F6F6"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v7.widget.Toolbar>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_home"
+        android:layout_width="match_parent"
+        android:background="#F6F6F6"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

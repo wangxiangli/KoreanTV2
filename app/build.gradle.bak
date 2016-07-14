@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.gaojunhui.koreantv"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'com.android.support:design:23.4.0'
+<<<<<<< HEAD
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.alibaba:fastjson:1.2.13'
+    compile 'org.greenrobot:eventbus:3.0.0'
+=======
+<<<<<<< HEAD
+=======
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.alibaba:fastjson:1.2.13'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.facebook.fresco:fresco:0.11.0'
+    compile 'com.facebook.fresco:animated-gif:0.11.0'
+    compile 'com.facebook.fresco:animated-webp:0.11.0'
+>>>>>>> 7daac023542f8882eeef0efe6f606749e57ed3bc
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.alibaba:fastjson:1.2.13'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.facebook.fresco:fresco:0.11.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+>>>>>>> a45461d34754e80976c575548db442dd4bdad29d
+}

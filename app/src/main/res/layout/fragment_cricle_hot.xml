@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.srain.cube.views.ptr.PtrClassicFrameLayout
+    android:id="@+id/ptr_hot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F6FA"
+            >
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape"
+                android:orientation="horizontal"
+                >
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rb_1day"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:text="1天内"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="#088FEB"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rb_3day"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:text="3天内"
+                    android:textColor="#088FEB"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@drawable/shape1"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rb_7day"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:text="7天内"
+                    android:textColor="#088FEB"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@drawable/shape1"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rb_30day"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:text="30天内"
+                    android:textColor="#088FEB"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/search"
+            android:hint="搜索用户和内容"/>
+        <ListView
+            android:id="@+id/lv_circle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+        </ListView>
+    </LinearLayout>
+</in.srain.cube.views.ptr.PtrClassicFrameLayout>

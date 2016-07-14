@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homePullToRefreshScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_margin="10dp"
+            android:id="@+id/image_tv_head"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            fresco:roundedCornerRadius="10dp"
+            fresco:placeholderImage="@drawable/ic_launcher" />
+    <!-- TOP3-->
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOP3"
+                android:textSize="20sp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_top3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+        <!-- 热播剧场-->
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/textView_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="热播剧场"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textView_more"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看更多"
+                android:textColor="#aa0000"
+                android:textSize="15sp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/textView_hot"
+                android:id="@+id/recyclerView_hot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+        <!-- 正在更新-->
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/textView_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最近更新"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textView_more2"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看更多"
+                android:textColor="#aa0000"
+                android:textSize="15sp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/textView_update"
+                android:id="@+id/recyclerView_updata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+        <!-- 标签选剧-->
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标签选剧"
+                android:textSize="20sp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

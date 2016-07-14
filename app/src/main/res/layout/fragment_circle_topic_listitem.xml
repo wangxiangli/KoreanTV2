@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageview_tv"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textview_tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/imageview_tv"
+        android:text="#这是什么#"
+        android:textColor="#3A9AFD" />
+
+
+
+
+    <ToggleButton
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/button_attented"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/togglebuttonbackground"
+        android:textOn="取消关注"
+        android:textOff="关注"
+        android:textColor="@drawable/togglebutton_text" />
+    <TextView
+        android:layout_toLeftOf="@id/button_attented"
+        android:layout_alignLeft="@id/textview_tvname"
+        android:id="@+id/textview_tvsumary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_tvname"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="屌丝程序员逆袭ssss" />
+
+</RelativeLayout>

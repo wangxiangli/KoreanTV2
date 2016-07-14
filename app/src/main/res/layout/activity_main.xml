@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_all"
+        android:layout_weight="14"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+         />
+    <RadioGroup
+        android:layout_weight="1"
+        android:id="@+id/radioGroup_main"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RadioButton
+            android:id="@+id/radioButton_home"
+            android:button="@null"
+            android:text="首页"
+            android:textColor="@drawable/rb_home_text"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:onClick="click"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/rb_home"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton_circle"
+            android:button="@null"
+            android:text="圈子"
+            android:textSize="10sp"
+            android:textColor="@drawable/rb_cricle_text"
+            android:gravity="center"
+            android:drawableTop="@drawable/rb_cricle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:onClick="click"
+            android:layout_height="wrap_content"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton_mine"
+            android:button="@null"
+            android:text="我的"
+            android:textSize="10sp"
+            android:textColor="@drawable/rb_mine_text"
+            android:drawableTop="@drawable/rb_mine"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:onClick="click"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+    </RadioGroup>
+
+</LinearLayout>

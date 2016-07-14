@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_marginTop="2dp"
+        android:id="@+id/image_varity_top"
+        android:layout_width="match_parent"
+
+        android:layout_height="150dp" />
+    <TextView
+        android:id="@+id/tv_varity_top_update"
+        android:text="@string/app_name"
+        android:layout_alignBottom="@+id/image_varity_top"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/image_varity_top"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_varity_top_title"
+            android:text="title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_varity_top_sub"
+            android:text="sub"
+
+            android:singleLine="true"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
